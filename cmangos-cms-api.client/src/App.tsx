@@ -1,3 +1,4 @@
+import React from 'react'
 import { useEffect, useState } from 'react';
 import './App.css';
 
@@ -48,6 +49,7 @@ function App() {
 
     async function populateWeatherData() {
         const response = await fetch('weatherforecast');
+        console.log(response);
         if (response.ok) {
             const data = await response.json();
             setForecasts(data);
