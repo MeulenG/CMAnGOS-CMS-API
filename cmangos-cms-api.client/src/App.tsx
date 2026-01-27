@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -8,6 +7,7 @@ import Access from './pages/Access';
 import Features from './pages/Features';
 import Support from './pages/Support';
 import Community from './pages/Community';
+import AdminDashboard from './pages/AdminDashboard';
 import './App.css';
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
             <Route path="/features" element={<Features />} />
             <Route path="/support" element={<Support />} />
             <Route path="/community" element={<Community />} />
+            <Route path="/admin" element={<AdminDashboard />} />
           </Routes>
         </main>
         <Footer />
