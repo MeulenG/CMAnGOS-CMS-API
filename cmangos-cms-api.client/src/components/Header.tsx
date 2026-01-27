@@ -19,6 +19,7 @@ const Header: React.FC = () => {
           <li><Link to="/features">Server Features</Link></li>
           <li><Link to="/support">Support</Link></li>
           <li><Link to="/community">Community</Link></li>
+          <li><Link to="/admin">Admin Dashboard</Link></li>
         </ul>
       </nav>
     </header>
